@@ -69,9 +69,14 @@
       <div class="headerTitle"><%= contact["name"] %></div>
       <div class="headerBlock">
         <a href="mailto:<%= contact["email"] %>"><%= contact["email"] %></a> <br />
-        <%= contact["page"] %>  <br />
         <% unless contact["phone"].nil? %>
-          <%= contact["phone"] %>
+          <%= contact["phone"] %> <br />
+        <% end %>
+        <a href="<%= contact["linkedin"] %>"><%= contact["linkedin"] %></a> <br />
+        <a href="<%= contact["twitter"] %>"><%= contact["twitter"] %></a> <br />
+        <a href="<%= contact["stackoverflow"] %>"><%= contact["stackoverflow"] %></a> <br />
+        <% unless contact["page"].nil? %>
+          <%= contact["page"] %>  <br />
         <% end %>
       </div>
     </div> 
@@ -97,9 +102,7 @@
       <div class="sectionHeader"><strong>SKILLS:</strong></div>
       <% skills.each do |skill| %>
         <div class="sectionContent"><strong><%= skill['name'] %>:</strong>
-          <% skill['skills'].each do |s| %>
-            <%= s %>,
-          <% end %>
+          <%= skill['skills'].join(", ") %>
         </div>
       <% end %>
     </div>
@@ -107,7 +110,7 @@
     <div class="section">
       <div class="sectionHeader"><strong>EDUCATION:</strong></div>
       <% education.each do |institution| %>
-        <div class="sectionContent"><%= institution["degree"] %>. <br />
+        <div class="sectionContent"><strong><%= institution["degree"] %>.</strong> <br />
           <%= institution["name"] %>, <%= institution["location"] %><br />
           <%= institution["dates"] %> <br />
         </div> 
@@ -124,6 +127,7 @@
     </div>
 
     <div class="section"><strong>References available on request.</strong></div>
+    <div class="section"><small>This Resume was built with cv_builder(<a href="https://github.com/bjhaid/cv_builder">https://github.com/bjhaid/cv_builder</a>)</small></div>
 
 
   </body>

@@ -1,126 +1,77 @@
 contact:
-    name: foo bar
-    email: 'harper@nata2.org'
-    page: '[harperreed.com](https://harperreed.com)'
-    github: '[github.com/harperreed](https://github.com/harperreed)'
-    linkedin: '[linkedin.com/in/harperreed](http://www.linkedin.com/in/harperreed)'
-    twitter: '[@harper](http://twitter.com/harper)'
+    name: Abejide Ayodele
+    email: 'abejideayodele@gmail.com'
+    page: 
+    github: 'https://github.com/bjhaid'
+    phone: 7739521406
+    linkedin: 'http://www.linkedin.com/pub/abejide-ayodele/42/954/807'
+    twitter: 'http://twitter.com/bjhaid'
+    stackoverflow: 'http://stackoverflow.com/users/1020958/bjhaid'
 
 work:
 
-    - employer: Food for America 
-      title: Chief Technology Officer
-      location: 'Chicago, Il'
-      dates: April 2011 - December 2012
-      note: Food for America is the relection campaign for President Bar Food.
+    - employer: Vas Consulting
+      title: Solutions Architect
+      location: 'Lagos, Nigeria'
+      dates: September 2013 till Date
       description:
-        - 'Hired world class technology team to build the technology platform for the reelection campaign.'
-        - 'Worked with team to help define and architect the solutions that helped reelect the president.'
+        - 'Mentor Junior Staff in software architecture and software development best practices. Provide career management support to staff and support the marketing and development of new business.'
+        - 'Defining guidelines for design, development and Identify new methods for analyzing, processing, and visualizing data.'
+        - 'Research and deliver best-practices for service-enabling systems using industry standards in multiple communities and architect, design, and implement service-enabled and interoperable systems.'
+        - 'Directs the implementation by evaluating, testing and modifying the application until the functionality meets business goals.'
+        - 'Rewrote the core application logic for the Blackberry Broker'
+        - 'Migrated the Blackberry Broker Application from Zero Dependency Management/Version Release to an application that has all its dependencies/release cycle managed by Maven and is in the process of adopting Continuous Integration(CI)'
+        - 'Recommended number of Man Days Projects/Features was expected to span'
+        - 'Engaged in Architectural Decision'
+        - 'Wrote X number of Features'
+        - 'Identified and fixed bugs'
+        - 'Recommended "<b>daily stand up meetings</b>" which has been adopted and in place review of status of projects are done in this meetings'
 
-    - employer: E Hosting
-      title: Customer in Residence
-      location: 'San Antonio, TX'
-      dates: October 2009 - April 2010
-      note: E is an IT hosting company with a focus on cloud.
+    - employer: Vas Consulting
+      title: Software Engineer
+      location: 'Lagos, Nigeria'
+      dates: 'July 2011 - August 2013'
       description:
-        - 'Worked with professional services department to help clients find the right solution. '
-        - 'Worked with executive staff to help define better customer experience'
-        - 'Represented E at conferences and small events.'
+        - "Engaged in almost all aspects of Software Delivery, from talking to the client's client about user experience to engaging in high level meetings of Project Managers(to provide the Engineer's opinion) to deployment to engaging clients in UAT to writing software, identifying and fixing bugs etc."
+        - "Moved the VAS Consulting Applications from <b>NO</b> version control to GIT"
+        - "Lead the fore front for adoption of Test Driven Development(TDD)"
+        - "Built a Call Telephony Integration CTI (Ruby on Rails) integrating Switchvox PABX with SugarCRM to display pop-up details(name and phone number with hyperlink to SugarCRM page of the caller, where details are not available, an hyperlink to create the contact is created) of the caller to the callee's computer screen for Wakanow Travel Agency."
 
-    - employer: Corp, LLC
-      title: Chief Technology Officer
-      location: 'Chicago, IL'
-      dates: August 2005 - October 2009
-      note: Corp is the parent company of the Threadless.com.
-      description:
-        - 'Acted as technology leader for a company of ~60 people with revenue of ~20-30M'
-        - 'Worked in a close team to design, execute and manage community websites'
-        - 'Lead the technology to support Threadless.com growth.'
-        - 'Grew Threadless.com from 2 barely functioning servers to over 45 devices.'
-        - 'Helped bridge the gap between the internet and reality with 2 retail stores.'
-        - 'Spoke about our technology at various events and conference, representing Corp and the Threadless vision.'
-        - 'Managed a small team of engineers to handle the day to day maintenance and projects.'
+        - "Deployment and Testing of Blackberry Broker Application(Spring/J2EE) in Airtel Kenya, Ghana, Tanzania, Uganda, Madagascar, DRC, Sierria Leone, Zambia, and Rwanda."
 
-    - employer: Jabi
-      title: Summer Intern
-      location: 
-      dates: June 2005 - August 2005
-      note: Jabi is a community website that allows users to create pages for subjects of interest.
-      description:
-        - 'Worked with Seth Godin and an amazing team to help build an design the initial version of Jabi.'
-        - 'Helped define initial vision and technology for Jabi before core staff was hired'
+        - "Completed a full migration of provisioning platform from JCP (Jetayu Charging Proxy) to Blackberry Broker(Spring/J2EE) (this included data analysis and database migration) in Airtel Tanzania, Zambia, and Madagascar."
 
-    - employer: Kramma and Crasselt
-      title: Web Programmer
-      location: 'Chicago, IL'
-      dates: October 2004 - July 2005
-      note: Kramma And Crasselt is an industry leading medium sized advertising agency.
-      description:
-        - 'Lead technologist and technical liaison to account management and creative staff.'
-        - 'Lead architect for client web applications. Worked with clients Airtran.com, Careerbuilder.com, and Barton Beers. (PHP, MYSQL, LINUX)'
-        - 'Lead engineer on full life cycle of Super Bowl viral campaign, Yeknominc.com. (PHP, MYSQL, LINUX)'
-        - 'Managed legacy operations for client web application management. (Perl, Navitaire SkyLights, JAVA)'
+        - "Built an updater engine(Ruby) for Kakawa Discount House Limited, to integrate Finnacle, 3M and their Customer records into SugarCRM."
 
-    - employer: World Book Publishing
-      title: Security and Software Engineer
-      location: 'Chicago, IL'
-      dates: June 2001 - October 2004
-      note: World Book Publishing is a leading publisher of encyclopedias and children's learning material.
-      description:
-        - 'Lead development staff and managed offshore engineering team. Worked to develop and maintain World Book Publishing''s client facing web presence. Helped usher in new technology and standards - moving from AIX, DB2 on IBM hardware to Solaris, Oracle on Sun Hardware. Introduced open source technology and solution. (Solaris, JAVA, DB2, AIX, XML)'
-        - 'Wrote desktop content management utilities to aid in management of XML content by non-technical staff. (C#, PHP)'
-        - 'Developed practices to insure content accessibility and data portability. (JAVA, XML, XSLT, C#, DB2)'
-        - 'Helped develop a solid software security plan. Worked with system engineers to architect a secure production environment. Deployed production servers using open source software to meet budget constraints. (LINUX, NMAP, NESSUS, SOLARIS, AIX)'
+        - "Provided Bug fixes, enhanced features and added new features in Blackberry Broker(Spring/J2EE) for Airtel Zambia, Madagascar and Rwanda."
+
+        - "Trained backend Support Engineers/ Customer Service agents on usage of the Blackberry Broker(Spring/J2EE) in Airtel Kenya, Ghana, Tanzania, Madagascar, Zambia and DRC."
+
+        - "Completed a full migration of Zambia Blackberry subscribers to a rebased platform upon Government policy on currency rebasing."
+
+        - "Involved in Mentoring Program for interns and new recruits."
+
 
 skills:
     - name: 'Application Development'
       skills:
-        - Python
-        - PHP
         - Ruby
-        - 'C#'
+        - Java
+        - Bash
+        - JQuery
+        - Python
     - name: 'Platforms'
       skills:
-        - 'Unix (Linux, Solaris, AIX)'
-        - OSX
+        - 'Linux'
+        - 'OSX'
+        - 'Windows*'
     - name: 'Databases'
       skills:
+        - Oracle
         - MySQL
-        - NoSQL
-        - LotsOfSQL
-    - name: 'System Software'
-      skills:
-        - Apache 
-        - Lighttpd
-        - Tornado
-        - Varnish
-        - nginx
-        - PHP
-        - Python
-        - Memcached
-        - Ejabberd
-        - Qmail
-        - Postfix
-        - Courier-IMAPd
-        - Endeca
+        - MongoDB
+        - Postgres
 
-    - name: 'Cloud Infrastructure'
-      skills:
-        - 'E Cloud'
-        - Slicehost
-        - 'AWS (S3, ec2, EBS, SimpleDB)'
-        - Zerigo DNS
-        - Google App Engine
-    - name: Security
-      skills:
-        - PGP
-        - Nessus
-        - NMap
-        - ACiD/Snort
-        - Portsentry
-        - IPF
-        - Linux Firewalling
-        - General Linux security
     - name: 'Markup Languages'
       skills:
         - HTML
@@ -131,52 +82,28 @@ skills:
         - Markdown
 
 education:
-    - degree: 'Bachelor of Arts, Computer Science and Philosophy' 
-      name: Cornell College
-      location: 'Mt Vernon, Iowa'
-      dates: 2001
+    - degree: 'Bachelor of Science, Demography and Social Statistics'
+      name: 'Obafemi Awolowo University'
+      location: 'Ile-Ife, Nigeria'
+      dates: 2008
+
+    - degree: 'ND, Mathematics and Statistics'
+      name: 'Yaba College of Technology'
+      location: 'Lagos, Nigeria'
+      dates: 2002
 
 awards:
-  -
-    name: "PRIX ARS ELECTRONICA"
-    location: "Linz, Austria"
+  - name: "STARTUP WEEKEND"
+    location: "Louisville, KY"
     awards:
       -
-        name: "Net Vision Honorary Mention"
+        name: "3RD Place (with DnD Team)"
+        date: "2013"
+
+  - name: "Department of Statistics, Yaba College Technology"
+    location: "Yaba, Lagos, Nigeria"
+    awards:
+      -
+        name: "Joint Best Graduating Student"
         date: "2002"
-  -
-    name: "MCIC"
-    location: "Chicago, IL"
-    awards:
-      -
-        name: " Data Innovation Award for the hacking the Chicago Transit Authority Bus API"
-        date: "2010"
-  -
-    name: "Crain's"
-    location: "Chicago, Il"
-    awards:
-      -
-        name: "40 under 40"
-        date: "2013"
-  -
-    name: "Webbie's"
-    location: "New York, NY"
-    awards:
-      -
-        name: "Brakeout of the Year"
-        date: "2013"
-  -
-    name: "Roxie Awards"
-    location: "Chicago, Il"
-    awards:
-      -
-        name: "CBO of the Year"
-        date: "2013"
-
-
-
-
-
-
-
 

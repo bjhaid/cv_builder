@@ -3,20 +3,25 @@
 ##CONTACT:
 
 [<%= contact["email"] %>](mailto:<%= contact["email"] %>)  
-<%= contact["page"] %>   
-<%= contact["twitter"] %>  
-<%= contact["github"] %>  
-<%= contact["linkedin"] %>  
-
+<%= contact["phone"] %>  
+<% unless contact["page"].nil? %>
+<<%= contact["page"] %>/>   
+<% end %>
+<<%= contact["twitter"] %>/>  
+<<%= contact["github"] %>/>  
+<<%= contact["linkedin"] %>/>  
+<<%= contact["stackoverflow"] %>/>  
 
 ##EXPERIENCE:
 <% work.each do |job| %>
-_<%= job["title"] %>_ **<%= job["employer"] %>** <%= job["location"] %> <%= job["dates"] %>  
-<%= job["note"] %>   
+_<%= job["title"] %>_ **<%= job["employer"] %>** <%= job["location"] %> <%= job["dates"] %>
+<%= job["note"] %>
 
 <% unless job["description"].nil? %>
 <% job["description"].each do |item| %>
-* <%= item %>
+<% unless item.nil? %>
+* <%= item.gsub(/<b>(.*)<\/b>/, "**\\1**") %>  
+<% end %>
 <% end %>
 <% end %>
 
@@ -24,8 +29,7 @@ _<%= job["title"] %>_ **<%= job["employer"] %>** <%= job["location"] %> <%= job[
 
 ##SKILLS:
 <% skills.each do |skill| %>
-* **<%= skill['name'] %>**: <% skill['skills'].each do |s| %><%= s %>, <% end %>
-
+  * **<%= skill['name'] %> **: <%= skill['skills'].join(", ") %>
 <% end %>
 
 ##EDUCATION:
@@ -44,3 +48,4 @@ _<%= job["title"] %>_ **<%= job["employer"] %>** <%= job["location"] %> <%= job[
 <% end %>
 
 **References available on request.**
+This Resume was built with cv_builder(<https://github.com/bjhaid/cv_builder/>)
