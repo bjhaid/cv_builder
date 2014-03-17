@@ -10,10 +10,15 @@ contact:
 
 work:
 
+    - employer: Braintree/Paypal/Ebay
+      title: Software Engineer
+      location: 'Chicago, USA'
+      dates: 'February 2014 till Date'
+
     - employer: Vas Consulting
       title: Solutions Architect
       location: 'Lagos, Nigeria'
-      dates: September 2013 till Date
+      dates: September 2013 - January 2014
       description:
         - 'Mentor Junior Staff in software architecture and software development best practices. Provide career management support to staff and support the marketing and development of new business.'
         - 'Defining guidelines for design, development and Identify new methods for analyzing, processing, and visualizing data.'
