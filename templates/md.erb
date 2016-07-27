@@ -45,7 +45,7 @@ _<%= job["title"] %>_ **<%= job["employer"] %>** <%= job["location"] %> <%= job[
 ##EDUCATION:
 <% education.each do |institution| %>
 <%= institution["degree"] %>.
-<%= institution["name"] %>, <%= institution["location"] %> <%= institution["dates"] %>
+<%= [institution["name"], institution["location"], institution["dates"]].compact.join(", ") %>
 
 <% end %>
 

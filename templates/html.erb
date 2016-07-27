@@ -120,7 +120,7 @@
       <div class="sectionHeader"><strong>EDUCATION:</strong></div>
       <% education.each do |institution| %>
         <div class="sectionContent"><strong><%= institution["degree"] %>.</strong> <br />
-          <%= institution["name"] %>, <%= institution["location"] %><br />
+          <%= [institution["name"], institution["location"]].compact.join(", ") %><br />
           <%= institution["dates"] %> <br />
         </div>
       <% end %>

@@ -62,13 +62,13 @@ _Software Engineer_ **Vas Consulting** Lagos, Nigeria July 2011 - August 2013
 
 ##EDUCATION:
 LPIC 2.
-Linux Professional Institute,  2016
+Linux Professional Institute, 2016
 LPIC 1.
-Linux Professional Institute,  2015
+Linux Professional Institute, 2015
 Bachelor of Science, Demography and Social Statistics.
-Obafemi Awolowo University, Ile-Ife, Nigeria 2008
+Obafemi Awolowo University, Ile-Ife, Nigeria, 2008
 ND, Mathematics and Statistics.
-Yaba College of Technology, Lagos, Nigeria 2002
+Yaba College of Technology, Lagos, Nigeria, 2002
 
 ##AWARDS:
 - **2013 STARTUP WEEKEND** (Louisville, KY): 3RD Place (with DnD Team)
