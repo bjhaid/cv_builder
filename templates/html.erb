@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
   <head>
-    <title><%= contact["name"] %> : Resume</title>
+    <title><%= contact["name"]["value"] %> : Resume</title>
     <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
     <style type="text/css" media="screen">
       body{
@@ -48,7 +48,7 @@
       }
 
       .headerTitle{
-        font-size: 24pt; 
+        font-size: 24pt;
         font-weight: bold;
         text-align: center;
         padding: 5px;
@@ -66,27 +66,25 @@
   <body>
 
     <div class="section">
-      <div class="headerTitle"><%= contact["name"] %></div>
+      <div class="headerTitle"><%= contact.delete("name")["value"] %></div>
       <div class="headerBlock">
-        <a href="mailto:<%= contact["email"] %>"><%= contact["email"] %></a> <br />
-        <% unless contact["phone"].nil? %>
-          <%= contact["phone"] %> <br />
-        <% end %>
-        <a href="<%= contact["linkedin"] %>"><%= contact["linkedin"] %></a> <br />
-        <a href="<%= contact["twitter"] %>"><%= contact["twitter"] %></a> <br />
-        <a href="<%= contact["stackoverflow"] %>"><%= contact["stackoverflow"] %></a> <br />
-        <% unless contact["page"].nil? %>
-          <%= contact["page"] %>  <br />
-        <% end %>
+        <a href="mailto:<%= contact["email"]["value"] %>"><%= contact.delete("email")["value"] %></a> <br />
+<% contact.each do |k, v| %>
+  <% if v["link"] %>
+    <a href="<%= v["value"] %>"><%= v["value"] %></a> <br />
+  <% else %>
+    <%= v["value"] %> <br />
+  <% end %>
+<% end %>
       </div>
-    </div> 
+    </div>
 
     <div class="section">
       <div class="sectionHeader"><strong>EXPERIENCE:</strong></div>
       <% work.each do |job| %>
         <div class="sectionContent">
           <i><%= job["title"] %></i> <strong><%= job["employer"] %></strong> <%= job["location"] %> <%= job["dates"] %> <br />
-          <%= job["note"] %> 
+          <%= job["note"] %>
           <% unless job["description"].nil? %>
             <ul>
               <% job["description"].each do |item| %>
@@ -108,12 +106,23 @@
     </div>
 
     <div class="section">
+      <div class="sectionHeader"><strong>PROJECTS:</strong></div>
+      <% projects.each do |project| %>
+        <div class="sectionContent"><strong><%= project['name'] %>:</strong><br />
+          Role: <%= project['role'] %><br />
+          Link: <a href=<%= project['link'] %>><%=project['link'] %></a><br />
+          Description: <%= project['description'] %><br />
+        </div>
+      <% end %>
+    </div>
+
+    <div class="section">
       <div class="sectionHeader"><strong>EDUCATION:</strong></div>
       <% education.each do |institution| %>
         <div class="sectionContent"><strong><%= institution["degree"] %>.</strong> <br />
           <%= institution["name"] %>, <%= institution["location"] %><br />
           <%= institution["dates"] %> <br />
-        </div> 
+        </div>
       <% end %>
     </div>
 
@@ -126,7 +135,6 @@
       <% end %>
     </div>
 
-    <div class="section"><strong>References available on request.</strong></div>
     <div class="section"><small>This Resume was built with cv_builder(<a href="https://github.com/bjhaid/cv_builder">https://github.com/bjhaid/cv_builder</a>)</small></div>
 
 

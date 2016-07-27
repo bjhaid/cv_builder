@@ -1,34 +1,48 @@
 contact:
-    name: Abejide Ayodele
-    email: 'abejideayodele@gmail.com'
-    page: 
-    github: 'https://github.com/bjhaid'
-    phone: 7739521406
-    linkedin: 'http://www.linkedin.com/pub/abejide-ayodele/42/954/807'
-    twitter: 'http://twitter.com/bjhaid'
-    stackoverflow: 'http://stackoverflow.com/users/1020958/bjhaid'
+    name: 
+      value: Abejide Ayodele
+    email: 
+      value: 'abejideayodele@gmail.com'
+    page:  
+      value: 'http://www.abeji.de'
+      link: true
+    github: 
+      value: 'https://github.com/bjhaid'
+      link: true
+    phone: 
+      value: 7739521406
+    linkedin: 
+      value: 'http://www.linkedin.com/pub/abejide-ayodele/42/954/807'
+      link: true
+    twitter: 
+      value: 'http://twitter.com/bjhaid'
+      link: true
+    stackoverflow: 
+      value: 'http://stackoverflow.com/users/1020958/bjhaid'
+      link: true
 
 work:
-
-    - employer: Braintree/Paypal/Ebay
+    - employer: Braintree/Paypal
       title: Software Engineer
       location: 'Chicago, USA'
       dates: 'February 2014 till Date'
-
+      description:
+        - 'Involved in rewrite/optimization of the core funding applicationat Braintree'
+        - 'Involved in building the applications that provides the instant signup experience for European Braintree merchants'
+        - 'Involved in making Braintree Datacenters Active/Active (Wrote the app that exposes LVS cluster information across datacenters)'
+        - "Involved in optimization of Braintree's core payment processing application"
+        - "Involved in revamping/rebuilding Braintree's CI system, powering it with docker"
+        - 'Wrote the app that exposes an API that allows developers provision a pre-puppeted QA environment(in AWS)'
     - employer: Vas Consulting
       title: Solutions Architect
       location: 'Lagos, Nigeria'
       dates: September 2013 - January 2014
       description:
         - 'Mentor Junior Staff in software architecture and software development best practices. Provide career management support to staff and support the marketing and development of new business.'
-        - 'Defining guidelines for design, development and Identify new methods for analyzing, processing, and visualizing data.'
-        - 'Research and deliver best-practices for service-enabling systems using industry standards in multiple communities and architect, design, and implement service-enabled and interoperable systems.'
-        - 'Directs the implementation by evaluating, testing and modifying the application until the functionality meets business goals.'
         - 'Rewrote the core application logic for the Blackberry Broker'
         - 'Migrated the Blackberry Broker Application from Zero Dependency Management/Version Release to an application that has all its dependencies/release cycle managed by Maven and is in the process of adopting Continuous Integration(CI)'
         - 'Recommended number of Man Days Projects/Features was expected to span'
         - 'Engaged in Architectural Decision'
-        - 'Wrote X number of Features'
         - 'Identified and fixed bugs'
         - 'Recommended "<b>daily stand up meetings</b>" which has been adopted and in place review of status of projects are done in this meetings'
 
@@ -58,44 +72,48 @@ work:
 
 
 skills:
-    - name: 'Application Development'
+    - name: 'Languages'
       skills:
         - Ruby
-        - Java
-        - Bash
-        - JQuery
-        - Python
-    - name: 'Platforms'
+        - Elixir
+        - Erlang
+        - Java(rusty)
+        - C(rusty)
+    - name: 'OSes'
       skills:
-        - 'Linux'
-        - 'OSX'
-        - 'Windows*'
-    - name: 'Databases'
+        - '*nix'
+    - name: 'Orchestration'
       skills:
-        - Oracle
-        - MySQL
-        - MongoDB
-        - Postgres
-
-    - name: 'Markup Languages'
-      skills:
-        - HTML
-        - XHTML
-        - CSS
-        - XML
-        - XSLT
-        - Markdown
+        - Packer 
+        - Terraform
+        - Puppet
+        - Docker
 
 education:
+    - degree: 'LPIC 2'
+      name: 'Linux Professional Institute'
+      dates: 2016
+    - degree: 'LPIC 1'
+      name: 'Linux Professional Institute'
+      dates: 2015
     - degree: 'Bachelor of Science, Demography and Social Statistics'
       name: 'Obafemi Awolowo University'
       location: 'Ile-Ife, Nigeria'
       dates: 2008
-
     - degree: 'ND, Mathematics and Statistics'
       name: 'Yaba College of Technology'
       location: 'Lagos, Nigeria'
       dates: 2002
+
+projects:
+    - name: 'kafka_ex'
+      role: 'Maintainer'
+      link: 'https://hex.pm/packages/kafka_ex'
+      description: 'Kafka client for Elixir/Erlang.'
+    - name: 'active_record_bulk_insert'
+      role: 'Maintainer'
+      link: 'https://rubygems.org/gems/active_record_bulk_insert'
+      description: 'Exposes a bulk insert API to AR subclasses'
 
 awards:
   - name: "STARTUP WEEKEND"
@@ -104,7 +122,6 @@ awards:
       -
         name: "3RD Place (with DnD Team)"
         date: "2013"
-
   - name: "Department of Statistics, Yaba College Technology"
     location: "Yaba, Lagos, Nigeria"
     awards:

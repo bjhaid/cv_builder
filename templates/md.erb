@@ -1,16 +1,18 @@
-#<%= contact["name"] %> : Résumé
+#<%= contact.delete("name")["value"] %> : Résumé
 
 ##CONTACT:
 
-[<%= contact["email"] %>](mailto:<%= contact["email"] %>)  
-<%= contact["phone"] %>  
-<% unless contact["page"].nil? %>
-<<%= contact["page"] %>/>   
+<% if contact["email"] %>
+[<%= contact["email"]["value"] %>](mailto:<%= contact.delete("email")["value"] %>)
 <% end %>
-<<%= contact["twitter"] %>/>  
-<<%= contact["github"] %>/>  
-<<%= contact["linkedin"] %>/>  
-<<%= contact["stackoverflow"] %>/>  
+<% contact.each do |k, v| %>
+<% if v["link"] %>
+[<%= v["value"] %>](<%= v["value"] %>)
+<% else %>
+<%= v["value"] %>
+
+<% end %>
+<% end %>
 
 ##EXPERIENCE:
 <% work.each do |job| %>
@@ -20,7 +22,7 @@ _<%= job["title"] %>_ **<%= job["employer"] %>** <%= job["location"] %> <%= job[
 <% unless job["description"].nil? %>
 <% job["description"].each do |item| %>
 <% unless item.nil? %>
-* <%= item.gsub(/<b>(.*)<\/b>/, "**\\1**") %>  
+* <%= item.gsub(/<b>(.*)<\/b>/, "**\\1**") %>
 <% end %>
 <% end %>
 <% end %>
@@ -29,12 +31,20 @@ _<%= job["title"] %>_ **<%= job["employer"] %>** <%= job["location"] %> <%= job[
 
 ##SKILLS:
 <% skills.each do |skill| %>
-  * **<%= skill['name'] %> **: <%= skill['skills'].join(", ") %>
+  - **<%= skill['name'] %> **: <%= skill['skills'].join(", ") %>
+<% end %>
+
+##PROJECTS:
+<% projects.each do |project| %>
+  - **<%= project['name'] %> **:
+    Role: <%= project['role'] %>
+    Link: [<%= project['link'] %>](<%= project['link'] %>)
+    Description: <%= project['description'] %>
 <% end %>
 
 ##EDUCATION:
 <% education.each do |institution| %>
-<%= institution["degree"] %>.  
+<%= institution["degree"] %>.
 <%= institution["name"] %>, <%= institution["location"] %> <%= institution["dates"] %>
 
 <% end %>
@@ -42,10 +52,9 @@ _<%= job["title"] %>_ **<%= job["employer"] %>** <%= job["location"] %> <%= job[
 ##AWARDS:
 <% awards.each do |institution| %>
 <% institution["awards"].each do |award| %>
-* **<%= award["date"] %> <%= institution["name"] %>** (<%= institution["location"] %>): <%= award["name"] %>
+- **<%= award["date"] %> <%= institution["name"] %>** (<%= institution["location"] %>): <%= award["name"] %>
 <% end %>
 
 <% end %>
 
-**References available on request.**
 This Resume was built with cv_builder(<https://github.com/bjhaid/cv_builder/>)
